@@ -66,6 +66,9 @@
 - 20170731
 	- 利用bootstrap优化整个拓扑图的显示效果
 	- 整理README文档，解释页面内的具体使用方式
+- 20170801
+	- 修改切换方式，当切换到低时在往下摁还是加载第一个文件，到顶时不再显示图像
+	- 修改了文件命名方式，以0.json开始，向上增加
   ### 当前效果图如下：
   ![img](http://wx3.sinaimg.cn/large/006k2kyGgy1fhxmb13w6kg31gv0qakjv.gif)<br />
   若是显示不了[点我](http://wx3.sinaimg.cn/large/006k2kyGgy1fhxmb13w6kg31gv0qakjv.gif)

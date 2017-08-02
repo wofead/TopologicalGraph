@@ -216,6 +216,8 @@
 <script src="js/FileSaver.min.js"></script>
 <script src="js/saveSvgAsPng.js"></script>
 <script>
+//按键值
+var key;
 //整张图的属性
 var global_graph
 //文件名
@@ -356,7 +358,10 @@ function Display(){
 
   function dragended(d) {
     if (!d3.event.active) simulation.alphaTarget(0);
-    d.fx = null, d.fy = null;
+    if(key!=70){
+		d.fx = null, d.fy = null;
+		console.log("b");
+	}
 
   }
 }
@@ -603,7 +608,7 @@ function Simulation(){
 
 //切换拓扑图
 $(document).keydown(function(e){
-   var key =  e.which;
+   key =  e.which;
    if (key == 40 || key == 38) {
       e.preventDefault();
    }
@@ -614,7 +619,7 @@ $(document).keydown(function(e){
 0,1,2,3,4.
 */
 $(document).keyup(function(e){
-    var key =  e.which;
+    key =  e.which;
     // console.log(key);
     if(key == 40){//down
       var newFileName;
